@@ -24,7 +24,7 @@ if not pcall(wait) then
 end
 
 return(function ()
-    local idk1 = to_table(k)
+    local idk1 = to_table(_G.k)
     local idk = to_table('i love your mom')
     local tab = idk[1]()
     local tab2 = idk1[1]()

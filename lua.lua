@@ -7,7 +7,7 @@ local to_table = function(key)return {function()
     local final = {}
     local letter = 1
     while is_done == false do
-        if letter == string.len(key) + 1 then
+        if letter == #key + 1 then
             return {1,final,ma}
         end
         table.insert(final,string.byte(string.sub(key,letter,letter))+ma)

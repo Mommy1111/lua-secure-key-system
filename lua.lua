@@ -1,6 +1,10 @@
 
+_G.k = 'i love your mom' --key that user enters
 
 
+
+function check_key()
+    local key = 'i love your mom' --correct key
 local ma = math.random(1,100000)
 local to_table = function(key)return {function()
     local is_done = false
@@ -25,7 +29,7 @@ end
 
 return(function ()
     local idk1 = to_table(_G.k)
-    local idk = to_table('i love your mom')
+    local idk = to_table(key)
     local tab = idk[1]()
     local tab2 = idk1[1]()
     if tab[1] == 1 and tab2[1] == 1 then
@@ -92,3 +96,8 @@ return(function ()
         end
     end
 end)()
+end
+
+
+--check key function
+check_key()
